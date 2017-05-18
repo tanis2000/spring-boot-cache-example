@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Cache list</title>
+    </head>
+    <body>
+    <div>
+        <h1>Cache list</h1>
+    </div>
+        <div>
+            <ul>
+                <li th:each="file : ${files}">
+                    <a th:href="${file.filename}" th:text="${file.filename}"/>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
